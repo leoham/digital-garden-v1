@@ -5,8 +5,8 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: #cc6666;
+	--accent-dark: #a35151;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -49,6 +49,26 @@ main {
 	margin: auto;
 	padding: 3em 1em;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative; /* Allows positioning of child elements */
+}
+
+.internal-links {
+    display: flex;
+    gap: 1em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the internal links */
+}
+
+.social-links {
+    margin-left: auto; /* Keeps the social links aligned to the right */
+    display: flex;
+}
+
 h1,
 h2,
 h3,
@@ -82,7 +102,7 @@ a {
 	color: var(--accent);
 }
 a:hover {
-	color: var(--accent);
+	color: var(--accent-dark);
 }
 p {
 	margin-bottom: 1em;
